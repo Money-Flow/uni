@@ -1,11 +1,11 @@
 {
-  "name": "uni",
-  "version": "1.0.0",
+  "name": "@money-flow/uni",
+  "version": "0.1.0",
   "description": "",
   "scripts": {
     "rollup": "rollup -c"
   },
-  "author": "@money-flow",
+  "author": "money-flow",
   "license": "ISC",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
