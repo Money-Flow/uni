@@ -1,4 +1,6 @@
-on: push
+on:
+  branches:
+    - master
 
 jobs:
   publish:
