@@ -1,6 +1,8 @@
+name: 🚀 Publish
 on:
-  branches:
-    - master
+  push:
+    branches:
+      - master
 
 jobs:
   publish:
