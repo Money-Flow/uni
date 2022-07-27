@@ -7,7 +7,8 @@
   "packageRules": [
     {
       "automerge": true,
-      "automergeType":  "pr"
+      "automergeType":  "pr",
+      "matchFiles": ["package.json", ".github/workflows/*"]
     }
   ]
 }
