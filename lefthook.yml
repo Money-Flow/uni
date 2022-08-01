@@ -1,0 +1,8 @@
+pre-commit:
+    commands:
+        eslint:
+            glob: '*.{ts,tsx}'
+            run: yarn lint
+        stylelint:
+            glob: '*.{css}'
+            run: yarn stylelint
