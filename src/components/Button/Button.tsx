@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
 
 export type PropsType = {
-  label: string;
+    label: string
 }
 
-const Button: FC<PropsType> = (props) => (
-  <button>{props.label}</button>
+const Button: FC<PropsType> = ({ label }) => (
+    <button type="button">{label}</button>
 )
 
-export default Button;
+export default Button

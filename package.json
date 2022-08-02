@@ -3,7 +3,11 @@
   "version": "0.1.1",
   "description": "",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "lint": "eslint **/*.tsx",
+    "format": "yarn lint --fix",
+    "stylelint": "stylelint **/*.css",
+    "stylelint:fix": "stylelint '**/*.css' --fix"
   },
   "author": "money-flow",
   "license": "ISC",
@@ -13,15 +17,42 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {
+    "react": "18.2.0"
+  },
   "devDependencies": {
+    "@arkweid/lefthook": "^0.7.7",
     "@rollup/plugin-commonjs": "22.0.1",
     "@rollup/plugin-node-resolve": "13.3.0",
     "@rollup/plugin-typescript": "8.3.4",
     "@types/react": "18.0.15",
-    "react": "18.2.0",
-    "rollup": "2.77.2",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.6.2",
+    "rollup": "2.77.1",
     "rollup-plugin-dts": "4.2.2",
+    "stylelint": "^14.9.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
     "tslib": "2.4.0",
+    "tslint": "^6.1.3",
     "typescript": "4.7.4"
   }
 }
